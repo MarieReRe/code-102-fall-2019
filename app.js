@@ -31,6 +31,10 @@ age = age + 1;
 console.log(age);
 
 console.log(fullName + " is " + age + " years old ");
+var feet =  Math.floor(heightInInches / 12);
+var inches = heightInInches % 12; 
+
+console.log(fullName+" is "+feet+" foot " +inches+ " inches tall")
 
 
 
