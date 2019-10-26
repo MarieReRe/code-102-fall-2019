@@ -15,11 +15,11 @@ noStroke();
 fill (255, 0,0);
 circle(500,100,20);
 }
-
+var age = 27;
 function day1AM() {
 // console.log("hello world")
 var fullName = "Marie Antons";
-var age = 27;
+
 var weight = 190;
 var heightInInches = 69;
 var address = "1120 Depot Ln SE";
@@ -42,14 +42,30 @@ var convertedTemp = f2c(0);
 print (convertedTemp);
 }
 day1AM();
+day1PM();
+function day1PM(){    
+    var convertedTemp = f2c(0);
+    print (convertedTemp);  
+    print(canIGoToTheCasino(age, "IA"))
+    age = 19;
+    print(canIGoToTheCasino (age, "MN"))
+    print(canIGoToTheCasino (age, "IA"))
+    
+}
 
 function print(input){
     console.log(input);
 }
-
-//Converts Fahrenheit to Celsius
-//Input: Temperature in Fahrenheit  
+ //Converts Fahrenheit to Celsius
+    //Input: Temperature in Fahrenheit 
 function f2c (t){
- return ((t-32) *5/9);
+    return ((t-32) *5/9);
+   
+   }
+
+   function canIGoToTheCasino (age, location){
+    return age >=21 && location == "IA" || age >= 18 && location == "MN"
+
+
 
 }
