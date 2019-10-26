@@ -51,6 +51,8 @@ function day1PM(){
     print(canIGoToTheCasino (age, "MN"))
     print(canIGoToTheCasino (age, "IA"))
     
+    print(whatShouldIWear (75))
+    print(whatShouldIWear(1))
 }
 
 function print(input){
@@ -66,6 +68,25 @@ function f2c (t){
    function canIGoToTheCasino (age, location){
     return age >=21 && location == "IA" || age >= 18 && location == "MN"
 
+   
 
 
+
+}
+function canISleepIn(day, personalDay, holiday){
+    //assume normal 8-5 job
+    //return true if the day is Saturday or Sunday
+    //return true if on holiday
+
+}
+function whatShouldIWear(temp){
+    if(temp >= 75){
+        return "swim wear";
+    } else if (temp >= 45) { 
+        return "jacket or hoodie";
+    } else if (temp >= 10) {
+        return "winter jacket";
+    } else {
+        return "don't go outside";
+    }
 }
