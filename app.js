@@ -17,13 +17,20 @@ circle(500,100,20);
 }
 
 function day1AM() {
-console.log("hello world")
+// console.log("hello world")
 var fullName = "Marie Antons";
 var age = 27;
 var weight = 190;
 var heightInInches = 69;
 var address = "1120 Depot Ln SE";
 var middleName = "Ann";
+
+age = 28;
+console.log(age);
+age = age + 1;
+console.log(age);
+
+console.log(fullName + " is " + age + " years old ");
 
 
 
