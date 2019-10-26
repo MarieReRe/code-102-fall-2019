@@ -36,7 +36,20 @@ var inches = heightInInches % 12;
 
 console.log(fullName+" is "+feet+" foot " +inches+ " inches tall")
 
+print("Hello World");
+var convertedTemp = f2c(0);
 
-
+print (convertedTemp);
 }
 day1AM();
+
+function print(input){
+    console.log(input);
+}
+
+//Converts Fahrenheit to Celsius
+//Input: Temperature in Fahrenheit  
+function f2c (t){
+ return ((t-32) *5/9);
+
+}
