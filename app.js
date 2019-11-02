@@ -92,7 +92,7 @@ function whatShouldIWear(temp){
 }
 
 
-function day2AM(){
+/*function day2AM(){
     console.log(1);
     print(2);
     print(3);
@@ -136,3 +136,35 @@ states.forEach (function(state){
 
 
 day2AM();
+*/
+function day2PM(){
+    var marie = {
+        firstName:"Marie", 
+        middleName: "Ann",
+        lastName: "Antons",
+        dob: [12, 27, 1991], // month, day, year
+        likesPizza: true,
+        heightInInches: 69,
+    fullName: function(){
+        return this.firstName + ' ' + this.middleName + ' ' + this.lastName;
+    },
+    age: function(){
+        var today = new Date();
+        var year = today.getFullYear();
+        //getMonth will result in 0 for Jan, 1 for Feb, etc...
+        var month = today.getMonth() + 1;
+        var day = today.getDate();
+        var age = year - this.dob[2];
+        if (month < this.dob[0] || month === this.dob[0] && day <this.dob[1]){
+            age--;
+        }
+        return(age);
+    },
+    };
+    print(marie.firstName);
+    print(marie.heightInInches);
+    print(marie.likesPizza);
+    print(marie.fullName());
+    print(marie.age ());
+}
+day2PM();
